@@ -187,8 +187,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-07-16 10:11:51" itemprop="dateCreated datePublished" datetime="2022-07-16T10:11:51+08:00">2022-07-16</time>
+              <time title="创建时间：2022-07-16 10:11:51 / 修改时间：21:01:12" itemprop="dateCreated datePublished" datetime="2022-07-16T10:11:51+08:00">2022-07-16</time>
             </span>
 
           
@@ -196,7 +197,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>0</span>
+              <span>423</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -214,7 +215,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <p>java的String是一个很神奇的数据类型，因为它有两种声明方法：</p>
+<p>String a &#x3D; “abc”；<br>String b &#x3D; new String(“abc”);</p>
+<p>这两种声明方法得到的String是不一样的，第一种声明方法得到的String是存储在String常量池里面的，而第二种方式的声明很明显是正常的创建一个对象的使用方法，所以存储在堆中。</p>
+<p>这面我们先介绍一下“&#x3D;&#x3D;”。基本数据类型上的“&#x3D;&#x3D;”，是通过比较它们实际的值来判断是否相同；而对于引用数据类型，则是比较俩个引用的地址是否相等，也就是是否指向一个对象。而String是引用数据类型，我们用“&#x3D;&#x3D;”就可以判断两个对象是否能一致。</p>
+<p>进行测试：</p>
+<p>String str &#x3D; new String(“abc”);<br>System.out.println(str &#x3D;&#x3D; “abc”);<br>输出结果为false，与我们解释的一致。</p>
+
       
     </div>
 
@@ -421,7 +428,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">1k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
